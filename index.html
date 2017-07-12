@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>Distance and Time Calculator</title>
+
+        <link rel="stylesheet"
+              href="css/style.css" />
+
+        <script src="js/main.js">
+        </script>
+
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <div class="main">
+
+                <h2>Distance and Time Calculator</h2>
+
+                <form id="mainForm"
+                      method="post">
+
+                    <div class="input">
+
+                        <label>First Address: </label>
+
+                        <input type="text"
+                               id="firstAddress" />
+
+                        <label class="note"
+                               id="firstAddressNote"
+                               style="display: none">Please enter a first address.</label>
+
+                    </div>
+
+                    <div class="input">
+
+                        <label>Second Address: </label>
+
+                        <input type="text"
+                               id="secondAddress" />
+
+                        <label class="note"
+                               id="secondAddressNote"
+                               style="display: none">Please enter a second address.</label>
+
+                    </div>
+
+                    <div class="button">
+
+                        <input type="button"
+                               value="Calculate"
+                               id="submit"
+                               onclick="displayDistanceAndTime()" />
+
+                    </div>
+
+                </form>
+
+                <span>
+
+                    <label id="resultDistance"
+                           style="display: none">Distance</label>
+
+                    <br />
+
+                    <label id="resultTime"
+                           style="display: none">Time</label>
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
